@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lição 10</title>
+    <script>
+
+        function inicio() {
+            var escolha = parseInt(prompt('Digite )1-para consultar 2)-Para sair '));
+
+            if (escolha === 1) {
+                mascu();
+            } else if (escolha === 2) {
+                femi();
+            } else if (escolha === 3) {
+                sair();
+            } else {
+                erro();
+            }
+        }
+
+        function mascu() {
+            var peso = parseFloat(prompt('Digite seu peso: '));
+            var altura = parseFloat(prompt('Digite sua altura: '));
+            
+            var calculo = (peso / (altura * altura));
+
+            alert('Seu peso ideal é: ' +calculo.toFixed(1)+ ' ');
+
+            inicio();
+        }
+
+        function femi() {
+            var peso = parseFloat(prompt('Digite seu peso: '));
+            var altura = parseFloat(prompt('Digite sua altura: '));
+
+            var calculo = (peso / (altura * altura));
+
+            alert('Seu peso ideal é: ' +calculo.toFixed(1)+ ' ');
+
+            inicio();
+        }
+
+
+        function sair() {
+            var confirma = confirm('Você deseja sair? ');
+            if (confirma) {
+                window.close();
+            } else {
+                inicio();
+            }
+        }
+
+        function erro() {
+            alert('Escolha uma das alternativas. ');
+            inicio();
+        }
+
+        inicio();
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

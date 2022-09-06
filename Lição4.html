@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lição 4</title>
+    <script>
+
+        var a = parseInt(prompt("Digite o Primeiro valor: "));
+        var b = parseInt(prompt("Digite o Segundo valor: "));
+        var c = parseInt(prompt("Digite o Terceiro valor: "));
+        var soma;
+
+
+        if (c < a && a < b) {
+            alert("Os maiores números são: " +a+ " " +b+ " ");
+            soma = a + b;
+            alert("Soma é igual a: " + soma);            
+        } else if (b < a && a < c) {
+            alert("Os maiores números são: " +a+ " " +c+ " ");
+            soma = a + c;
+            alert("Soma é igual a: " + soma); 
+        } else if (a > c) {
+            alert("Os maiores números são: " +a+ " " +b+ " ");
+            soma = a + b;
+            alert("Soma é igual a: " + soma);
+        } else {
+            alert("Os maiores números são: " +b+ " " +c+ " ");
+            soma = b + c;
+            alert("Soma é igual a: " + soma);
+        }
+        
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

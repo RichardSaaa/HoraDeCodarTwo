@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function inicio() {
+			//ESCOPO
+			//Variavel Local
+			var escolha = parseInt(prompt('Selecione uma opção 1.Adição) 2.Substração) 3.Divisão) 4.Multiplicação) 5.Sair)'));
+				
+			if (escolha === 1) {
+				adi();
+			} else if (escolha === 2) {
+				subs();
+			} else if (escolha === 3) {
+				divi();
+			} else if (escolha === 4) {
+				multi();
+			} else if (escolha === 5) {
+				sair();
+			} else {
+                erro();
+            }
+		}
+
+		function adi() {
+			var ad1 = parseInt(prompt('Digite um valor inteiro: '));
+			var ad2 = parseInt(prompt('Digite o segundo valor inteiro: '));
+
+			var calculo = ad1 + ad2;
+
+			alert('O cálculo é: ' +calculo+ ' ');
+			inicio();
+		}
+
+		function subs() {
+			var sub1 = parseInt(prompt('Digite o primeiro valor: '));
+			var sub2 = parseInt(prompt('Digite o segundo valor: '));
+
+			var calculo = sub1 - sub2;
+
+			alert('O resultado da subtração é: ' +calculo+ ' ');
+
+			inicio();
+		}
+
+		function divi() {
+			var divi1 = parseFloat(prompt('Digite o primeiro valor: '));
+			var divi2 = parseFloat(prompt('O segundo valor para a divisão: '));
+
+			var calculo = divi1 / divi2;
+
+			alert('O resultado da divisão é: ' +calculo+ ' ');
+			inicio();
+		}
+
+		function multi() {
+			var mult1 = parseInt(prompt('Digite o primeiro valor: '));
+			var mult2 = parseInt(prompt('Digite o segundo valor: '));
+
+			var calculo = mult1 * mult2;
+
+			alert('O resultado da multiplicação é: ' +calculo+ ' ');
+			inicio();
+
+		}
+
+		function sair() {
+			var confirma = confirm('Você deseja sair? ');
+			if (confirma) {
+				window.close();
+			} else {
+				inicio();
+			}
+		}
+
+		function erro() {
+			alert('Escolha um alternativa. ');
+			inicio();
+		}
+
+
+        inicio();
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
